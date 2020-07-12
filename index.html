@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-12 m-3">
+            <div class="content">
+                <h5 class="d-block m-3">Nom Etudiants</h5>
+                <ul id="students">
+
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <input id="etudiant" class="form-control d-block m-3" type="text" placeholder="Saisir Nom ">
+
+    <div>
+        <button onclick="addStudent()" type="button" class="btn btn-outline-success d-block m-3">Add</button>
+    </div>
+    <div class="row">
+        <div class="col-12 m-3">
+            <h5 class="d-block m-3">Nom de la veille</h5>
+            <div class="content">
+                <ul id="subjects">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <input id="veille" class="form-control d-block m-3" type="text" placeholder="Saisir veile ">
+
+    <div>
+        <button onclick="addVeille()" type="button" class="btn btn-outline-success d-block m-3">Attribuer</button>
+    </div>
+
+    <div>
+        <button type="button" class="btn btn-outline-danger d-block m-3 clear">Refresh</button>
+    </div>
+
+
+
+
+    <script src='main.js'></script>
+</body>
+
+</html>
